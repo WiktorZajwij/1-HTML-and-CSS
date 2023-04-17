@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <nav>
+        <ul class="main-menu">
+          <li class="main-item">
+            <a class="main-link active-link" href="./index.html">Main</a>
+          </li>
+          <li class="main-item">
+            <a class="main-link" href="./team.html">Team</a>
+          </li>
+          <li class="main-item">
+            <a class="main-link" href="./lessons.html">Lesson</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <aside class="aside">
+        <ul class="aside-list">
+          <li class="aside-item">
+            <a class="aside-link link-project" href="./index.html"></a>
+          </li>
+          <li class="aside-item">
+            <a class="aside-link link-account aside-link-active"  href="./account.html"></a>
+          </li>
+          <li class="aside-item">
+            <a class="aside-link link-groups" href="#"></a>
+          </li>
+          <li class="aside-item">
+            <a class="aside-link link-cloud" href="#"></a>
+          </li>
+          <li class="aside-item">
+            <a class="aside-link link-setting" href="#"></a>
+          </li>
+        </ul>
+      </aside>
+      <section class="section-account">
+        <div class="account-left-col">
+          <div class="account-title-block before-letter">
+            <h2>
+              Andy Cube
+            </h2>
+            <a href="mailto:andycube@gmail.com">andycube@gmail.com</a>
+          </div>
+          <div class="account-password">
+            <div class="account-title-block before-lock">
+              <h2>
+                Change Password
+              </h2>
+              <p>Please choose a password whitch is longer than 6 characters</p>
+            </div>
+            <form class="password-form" action="http://echo.htmlacademy.ru">
+              <ul class="password-list">
+                <li class="container-input password-item">
+                  <label for="old-password">Old password</label>
+                  <input type="password" name="Old password" id="old-password" placeholder="Enter password">
+                </li>
+                <li class="container-input password-item">
+                  <label for="new-password">New password</label>
+                  <input type="password" name="New password" id="new-password" placeholder="Enter password">
+                </li>
+                <li class="container-input password-item">
+                  <label for="confirm-password">Confirm password</label>
+                  <input type="password" name="Confirm password" id="confirm-password" placeholder="Enter password">
+                </li>
+              </ul>
+              <input class="account-submit" type="submit" value="Save">
+            </form>
+          </div>
+        </div>
+        <div class="account-right-col">
+          <div class="account-title-block before-building">
+            <h2>
+              Company
+            </h2>
+            <p>Optional, but we would appreciate if you fill out these form</p>
+          </div>
+          <form class="company-form" action="http://echo.htmlacademy.ru">
+            <p class="container-input">
+              <label for="company-name">Company name</label>
+              <input type="text" name="Name" id="company-name" placeholder="Logos IT-academy">
+            </p>
+            <p class="container-input">
+              <label for="company-address">Company address</label>
+              <textarea name="Address" id="company-address" cols="30" rows="10" placeholder="61 I.Franka, Lviv"></textarea>
+            </p>
+            <div class="country-block">
+              <p class="container-input">
+                <label for="company-country">Country</label>
+                <input type="text" name="Country" id="company-country" placeholder="Enter country">
+              </p>
+              <p class="container-input">
+                <label for="company-city">City</label>
+                <input type="text" name="City" id="company-city" placeholder="Enter city">
+              </p>
+              <p class="container-input">
+                <label for="company-state">State</label>
+                <input type="text" name="State" id="company-state" placeholder="Enter city">
+              </p>
+              <p class="container-input">
+                <label for="company-postal-code">Postal code</label>
+                <input type="text" name="Postal code" id="company-postal-code" placeholder="Enter code" pattern="[0-9]{2}-[0-9]{3}">
+              </p>
+              
+            </div>
+            <input class="account-submit" type="submit" value="Save">
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
