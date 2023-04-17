@@ -1,0 +1,197 @@
+@import './base/reset';
+@import './base/variables';
+@import './base/mixins';
+
+
+body {
+  background-color: $color-background;
+  font: {
+    size: 15px;
+    family: sans-serif;
+    style: normal;
+    weight: 400;
+  }
+}
+
+// list
+.menu {
+  height: 200px;
+  margin-top: 100px;
+
+  &__list {
+    @include box (flex, 100%, 100%);
+    background-color: $color-menu;
+  }
+
+  &__item {
+    display: flex;
+    background-color: $color-item;
+    margin-right:2px;
+    
+    &:hover .menu__content {
+      width: 370px;
+    }
+    &:hover .menu__link::before {
+      left: -80px;
+    } 
+    &:hover .menu__link::after {
+      left: 0;
+    }
+  }
+
+
+
+  // link
+  %pseudo-elements {
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.2s;
+  }
+    
+  &__link {
+    position:relative;
+    @include box (block, 80px, 100%);
+    overflow: hidden;
+
+    
+    &::before {
+      content: "";
+      @extend %pseudo-elements;
+      @include position (absolute, 0px, 0px);
+      @include box (flex, 100%, 100%);
+      background: {
+          repeat: no-repeat;
+          size: 26px;
+          position: center;
+        }
+    }
+
+    &::after {
+      content: '';
+      @extend %pseudo-elements;
+      @include position (absolute, 0px, 80px);
+      @include box (flex, 100%, 100%);
+      color: #fff;
+      background: {
+        repeat: no-repeat;
+        size: 36px, cover;
+        position: center;
+      }
+      
+    }
+
+// icon
+    &_twitter::before {
+      background: {
+        color: $color-link; 
+        image: $img-twitter;
+      }
+    }
+    &_twitter::after {
+      background: {
+        image: $img-twitter, $color-twitter;
+      }
+    }
+    &_facebook::before {
+      background: {
+          color: $color-link;
+          image: $img-facebook;
+      }
+    }
+
+    &_facebook::after {
+      background: {
+        image: $img-facebook, $color-facebook;
+      }
+    }
+
+    &_linkedin::before {
+      background: {
+        color: $color-link;
+        image: $img-linkedin;
+      }
+    }
+
+    &_linkedin::after {
+      background: {
+        image: $img-linkedin, $color-linkedin;
+      }
+    }
+
+    &_instagram::before {
+      background: {
+        color: $color-link;
+        image: $img-instagram;
+      }
+    }
+
+    &_instagram::after {
+      background: {
+        image: $img-instagram, $color-instagram;
+      }
+    }
+
+    &_youtube::before {
+      background: {
+          color: $color-link;
+          image: $img-youtube;
+      }
+    }
+
+    &_youtube::after {
+      background: {
+        image: $img-youtube, $color-youtube;
+      }
+    }
+
+    &_tumblr::before {
+      background: {
+          color: $color-link;
+          image: $img-tumblr;
+      }
+    }
+
+    &_tumblr::after {
+      background: {
+        image: $img-tumblr, $color-tumblr;
+      }
+    }
+
+    &_dribbble::before {
+      background: {
+          color: $color-link;
+          image: $img-dribbble;
+      }
+    }
+
+    &_dribbble::after {
+      background: {
+        image: $img-dribbble, $color-dribbble;
+      }
+    }
+  }
+// text blok
+  &__content {
+    width: 0px;
+    overflow: hidden;
+    transition: width linear 0.2s;
+  }
+
+  &__title {
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+
+  &__text {
+    width: 370px;
+    padding: 10px;
+  
+  }
+  
+}
+
+
+
+

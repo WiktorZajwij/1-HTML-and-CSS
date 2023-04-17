@@ -1,0 +1,11 @@
+@mixin box ($d, $w, $h) {
+  display: $d;
+  width: $w;
+  height: $h;
+}
+@mixin position ($p, $t, $l) {
+  position: $p;
+  top: $t;
+  left: $l;
+}
+
