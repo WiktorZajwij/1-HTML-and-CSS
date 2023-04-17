@@ -1,0 +1,84 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+  background: url('../img/space.jpg') no-repeat center;
+  height: 100%;
+}
+.orbita {
+  width: 400px;
+  height: 400px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform-style: preserve-3d;
+  transform: rotateX(70deg) rotateY(0deg) rotateZ(0deg);
+}
+.earth {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  background: url('../img/earth.png') no-repeat center;
+  background-size: 250px; 
+  transform: rotateZ(0deg) translate(0) rotateX(-70deg) rotateY(0deg);
+}
+
+.moon {
+  width: 50px;
+  height: 50px;
+  background: url('../img/moon.png') no-repeat  center;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotateZ(0deg) translate(195px) rotateX(-90deg) rotateY(0deg);
+  /* transform: rotateX(250deg); */
+  animation-name: run;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  box-shadow: inset -15px 0px 10px rgb(16, 16, 16);
+}
+
+ @keyframes run {
+  0% {
+    transform: rotateZ(0deg) translate(195px) rotateX(-90deg) rotateY(0deg);
+    box-shadow: inset -30px 0px 10px rgb(61, 61, 61);
+  }
+  25% {
+    transform: rotateZ(90deg) translate(195px) rotateX(-90deg) rotateY(90deg);
+    box-shadow: inset 0px -50px 10px rgb(61, 61, 61);
+  }
+  50% {
+    transform: rotateZ(180deg) translate(195px) rotateX(-90deg) rotateY(180deg);
+    box-shadow: inset 30px 0px 10px rgb(61, 61, 61);
+  }
+  75% {
+    transform: rotateZ(270deg) translate(195px) rotateX(-90deg) rotateY(270deg);
+    box-shadow: inset 0px 30px 10px rgb(61, 61, 61);
+  }
+  100% {
+    transform: rotateZ(360deg) translate(195px) rotateX(-90deg) rotateY(360deg);
+    box-shadow: inset -30px 0px 10px rgb(61, 61, 61);
+  }
+} 
+

@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(233, 233, 233);
+  font-family: sans-serif;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  height: 120px;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.big-box {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.box {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: blue;
+  z-index: 2;
+}
+.box::before {
+  position: absolute; 
+  top: -15px;
+  left: -15px;
+  bottom: -15px;
+  right: -15px; 
+  content:'';
+  border-radius: 50%;
+  background-color: red;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  z-index: 1;
+}
+.color-white {
+  background-color: #fff;
+}
+
+.color-red {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.color-orange {
+  background-color: rgba(255, 98, 0, 0.6);
+}
+
+.color-yellow{
+  background-color: rgba(255, 200, 0, 0.49);
+}
+.color-blue {
+  background-color: rgba(0, 162, 255, 0.5);
+}
+
+.color-green {
+  background-color: rgba(127, 255, 212, 0.889);
+}
+
+.color-violet {
+  background-color: rgba(120, 43, 120, 0.6);
+}
+.color-black {
+  background-color: #000;
+}
+
+.color-white::before {
+  background-color: #fff;
+}
+
+.color-red:before {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.color-orange:before {
+  background-color: rgba(255, 98, 0, 0.6);
+}
+
+.color-yellow:before {
+  background-color: rgba(255, 200, 0, 0.49);
+}
+
+.color-blue:before {
+  background-color: rgba(0, 162, 255, 0.5);
+}
+
+.color-green:before {
+  background-color: rgba(127, 255, 212, 0.8);
+}
+
+.color-violet:before {
+  background-color: rgba(120, 43, 120, 0.6);
+}
+
+.color-black:before {
+  background-color: #000;
+}
+
+@keyframes pulse {
+  0% {
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+  }
+  100% {
+    opacity: 0;
+  }
+}
