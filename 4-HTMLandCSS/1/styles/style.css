@@ -1,0 +1,78 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+
+.big-block-1 {
+  width: 1920px;
+  height: 865px;
+  margin: 0 auto;
+}
+.block-1 {
+  float: left;
+  width: 274.28px;
+  height: 100%;
+  text-align: center;
+  font-size: 100px;
+  line-height: 865px;
+  color: #fff;
+  text-shadow: 0 0 7px #000;
+  font-family: 'Cinzel Bold';
+}
+.big-block-1::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.block-1-A {
+  background: #ED213A;
+  background: -webkit-linear-gradient(to top, #93291E, #ED213A);
+  background: linear-gradient(to top, #93291E, #ED213A);
+  
+}
+.block-1-A:hover {
+  background: linear-gradient(to bottom, #93291E, #ED213A);
+}
+
+.block-1-R {
+  background: #aa4b6b;
+  background: -webkit-linear-gradient(to bottom, #3b8d99, #6b6b83, #aa4b6b);
+  background: linear-gradient(to bottom, #3b8d99, #6b6b83, #aa4b6b);
+}
+.block-1-R:hover {
+  background: linear-gradient(to top, #3b8d99, #6b6b83, #aa4b6b);
+}
+
+.block-1-S {
+  background: #30E8BF;
+  background: -webkit-linear-gradient(to top, #FF8235, #30E8BF);
+  background: linear-gradient(to top, #FF8235, #30E8BF);
+}
+.block-1-S:hover {
+  background: linear-gradient(to bottom, #FF8235, #30E8BF);
+}
+
+.block-1-E {
+  background: #5A3F37;
+  background: -webkit-linear-gradient(to top, #2C7744, #5A3F37);
+  background: linear-gradient(to top, #2C7744, #5A3F37);
+}
+.block-1-E:hover {
+  background: linear-gradient(to bottom, #2C7744, #5A3F37);
+}
+
+.block-1-N {
+  background: #BA5370;
+  background: -webkit-linear-gradient(to top, #F4E2D8, #BA5370);
+  background: linear-gradient(to top, #F4E2D8, #BA5370);
+}
+.block-1-N:hover {
+  background: linear-gradient(to bottom, #F4E2D8, #BA5370);
+}
+
+.block-1-L {
+  background: #603813;
+  background: -webkit-linear-gradient(to top, #b29f94, #603813);
+  background: linear-gradient(to top, #b29f94, #603813);
+}
+.block-1-L:hover {
+  background: linear-gradient(to bottom, #b29f94, #603813);
+}

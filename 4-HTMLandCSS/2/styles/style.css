@@ -1,0 +1,265 @@
+@import url('./reset.css');
+*, *::before, *::after {
+  box-sizing: border-box;
+} 
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f3f3;
+}
+.title-block {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+}
+/* inline-block */
+.nav {
+  width: 1600px;
+  min-height: 100px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 4px grey;
+  font-size: 0;
+}
+.nav .col {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%; 
+}
+.nav .title {
+  width: 1000px;
+  font-size: 40px;
+  padding:30px;
+}
+.nav .menu {
+  /* width: 600px; */
+  font-size: 0px;
+  vertical-align: bottom;}
+.nav .menu-item {
+  width: 150px;
+  font-size: 25px;
+  height: 100px;
+  
+  display: inline-block;
+  border-right: 1px solid rgba(200 200 200 / 0.2);
+}
+.nav .menu-item:last-child {
+  border-right: 0;
+ }
+.nav .menu-link {
+  display: block;
+  color: black;
+  text-decoration: none;
+  height: 100%;
+  line-height: 100px;
+  text-align: center;
+  transition: background-color linear 0.2s;
+}
+.nav .menu-link:hover,
+.nav .menu-link:focus {
+  background-color: #f3f3f3;
+}
+
+
+/* float */
+.nav-2 {
+  width: 1600px;
+  min-height: 100px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 4px grey;
+}
+
+.nav-2 .col {
+  height: 100%;
+}
+.nav-2 .col:first-child {
+  float: left;
+}
+.nav-2 .col:last-child {
+  float: right;
+}
+
+.nav-2::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.nav-2 .title {
+  /* width: 1000px; */
+  font-size: 40px;
+  padding: 30px;
+}
+
+.nav-2 .menu {
+  /* width: 600px; */
+}
+
+.nav-2 .menu-item {
+  height: 100px;
+  width: 150px;
+  float: left;
+  border-right: 1px solid rgba(200 200 200 / 0.2);
+}
+.nav-2 .menu-2::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.nav-2 .menu-item:last-child {
+  border-right: 0;
+}
+
+.nav-2 .menu-link {
+  display: block;
+  color: black;
+  text-decoration: none;
+  height: 100%;
+  font-size: 25px;
+  line-height: 100px;
+  text-align: center;
+  transition: background-color linear 0.2s;
+}
+
+.nav-2 .menu-link:hover,
+.nav-2 .menu-link:focus {
+  background-color: #f3f3f3;
+}
+
+
+/* flex */
+.nav-3 {
+  width: 1600px;
+  min-height: 100px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 4px grey;
+}
+
+.nav-3 {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+.nav-3 .title {
+  width: 1000px;
+  font-size: 40px;
+  padding: 30px;
+}
+
+.nav-3 .menu {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: red; */
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-3 .menu-item {
+  text-align: center;
+  width: 150px;
+  font-size: 25px;
+  border-right: 1px solid rgba(200 200 200 / 0.2);
+}
+.nav-3 .menu-item:last-child {
+  border-right: 0;
+}
+
+.nav-3 .menu-link {
+  display: block;
+  color: black;
+  text-decoration: none;
+  height: 100%;
+  line-height: 100px;
+  text-align: center;
+  transition: background-color linear 0.2s;
+}
+
+.nav-3 .menu-link:hover,
+.nav-3 .menu-link:focus {
+  background-color: #f3f3f3;
+}
+
+/* випадаюче меню */
+.nav-4 {
+  display: flex;
+  justify-content: space-between;
+  width: 1600px;
+  min-height: 100px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 4px grey;
+}
+
+.nav-4 .title {
+  font-size: 40px;
+  padding: 30px;
+}
+
+.nav-4 .menu {
+  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-4 .menu-item {
+  position: relative;
+  min-width: 150px;
+  font-size: 25px;
+  border-right: 1px solid rgba(200 200 200 / 0.2);
+  
+}
+
+.nav-4 .menu-item:last-child {
+  border-right: 0;
+}
+
+.nav-4 .menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  height: 100%;
+  transition: background-color linear 0.2s;
+}
+
+.nav-4 .menu-link:hover,
+.nav-4 .menu-link:focus {
+  background-color: #f3f3f3;
+}
+
+.nav-4 .inner-menu {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  background: #fff;
+  min-width: 100%;
+  box-shadow: 0px 0px 4px grey;
+
+}
+
+.nav-4 .inner-link {
+  color: black;
+  border-top: 1px solid rgba(200 200 200 / 0.2);
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.nav-4 .inner-link:hover {
+  background-color: #f3f3f3;
+}
+
+.nav-4 .menu-item:hover .inner-menu {
+  display: block;
+}

@@ -1,0 +1,97 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+/* 
+font-family: 'Inter Thin';
+font-family: 'Inter ExtraLight';
+font-family: 'Inter Light';
+font-family: 'Inter Regular';
+font-family: 'Inter Medium';
+font-family: 'Inter SemiBold';
+font-family: 'Inter Bold';
+font-family: 'Inter ExtraBold';
+font-family: 'Inter Black'; 
+*/
+*, *::before, *:after {
+  box-sizing: border-box;
+}
+body {
+  color: #3a3939;
+  font-family: 'Rokkitt', serif;
+  font-size: 17px;
+  line-height: 1.4;
+}
+h1 {
+  padding: 10px;
+  font-size: 40px;
+  font-family: 'Inter Bold';
+  text-align: center;
+  color: #c91d1d;
+  background-color: #eeeeee;
+  margin-bottom: 50px;
+}
+.main {
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  height: 100%;
+  /* background-color: red; */
+  
+}
+.main > .block {
+  float: left;
+}
+.main::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.block:first-child {
+  width: 570px;
+  margin-right: 150px;
+  /* background-color: yellow; */
+}
+.block:last-child {
+  width: 480px;
+  /* background-color: orange; */
+}
+
+/* left-column */
+.left-column .big-image {
+  margin-bottom: 50px;
+}
+.left-column .big-image img {
+  border: 2px solid #cecece;
+  padding: 3px;
+  width: 100%;
+  
+}
+.left-column .small-image {
+  margin-bottom: 30px;
+}
+.left-column .small-image img {
+  display: block;
+  float: left;
+  border: 2px solid #cecece;
+  padding: 3px;
+  width: 120px;
+  margin-right: 30px;
+}
+.left-column .small-image > img:last-child {
+  margin: 0;
+}
+
+.left-column .small-image::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* right-column */
+h2 {
+  font-family: 'Inter Regular';
+  font-size: 30px;
+  font-weight: 700;
+  border-bottom: 4px solid #c91d1d;
+  margin-bottom: 10px;
+}
