@@ -1,0 +1,193 @@
+@media screen and (max-width: 1240px) and (min-width: 769px) {
+  .container {
+    width: 1240px;
+  }
+
+  .container-small {
+    width: 941px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-menu-mobile {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    border: 0;
+    padding: 0;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    background: red;
+  }
+
+  .btn-menu-mobile::before,
+  .btn-menu-mobile::after {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: #000000;
+    /* transform-origin: 50%; */
+    transition: transform linear 0.1s;
+  }
+
+  .btn-menu-mobile::after {
+    transform: rotate(0);
+    top: 0;
+  }
+
+  .btn-menu::before {
+    transform: rotate(0);
+    bottom: 0;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .menu-list-mobile {
+    display: block;
+    background-color: red;
+  }
+
+
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .container {
+    width: 768px;
+  }
+
+  .container-small {
+    width: 720px;
+  }
+
+  .header-logo {
+    min-height: 65px;
+  }
+
+  .slider {
+    height: 354px;
+  }
+
+  .slider-left {
+    background-size: cover;
+  }
+
+  .slider-right {
+    padding: 72px 20px;
+  }
+
+  .slider .time-and-link time {
+    font-size: 12px;
+  }
+
+  .slider .time-and-link a {
+    display: none;
+  }
+
+  .slider .tagline {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  .slider-right .text {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    height: 40px;
+  }
+
+  .featured {
+    margin-bottom: 60px;
+  }
+
+  .featured-preview-item .time-and-link {
+    margin-bottom: 16px;
+  }
+
+  .featured-preview-item .tagline {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .featured-preview-item .text {
+    font-size: 14px;
+  }
+
+  .featured-item-content {
+    margin-bottom: 49px;
+  }
+
+  .featured-item-content .time-and-link {
+    margin-bottom: 15px;
+  }
+
+  .featured-item-content .tagline {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .subscribe {
+    height: 275px;
+  }
+
+  .subscribe-left {
+    background-size: cover;
+  }
+
+  .subscribe-right {
+    padding: 90px 80px;
+  }
+
+  .subscribe-right p {
+    font-size: 18px;
+  }
+
+  .interviews {
+    margin-bottom: 33px;
+  }
+
+  .interviews img {
+    margin-bottom: 15px;
+  }
+
+  .interviews .time-and-link {
+    margin-bottom: 15px;
+  }
+
+  .interviews .tagline {
+    font-size: 16px;
+    padding: 0;
+    line-height: 1.5;
+  }
+
+  .news {
+    margin-bottom: 70px;
+  }
+
+  .news-item img {
+    margin-bottom: 15px;
+  }
+
+  .news-item .time-and-link {
+    margin-bottom: 15px;
+  }
+
+  .news-item .tagline {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 320px) {}
